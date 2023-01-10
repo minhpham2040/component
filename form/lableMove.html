@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        font-size: 62.5%;
+        font-family: sans-serif;
+    }
+    main{
+        font-size: 1.4rem;
+    }
+    .container{
+        max-width: 1200px;
+        margin:auto;
+    }
+    form{
+        width: 40rem;
+        padding: 1.6rem 2.8rem 2.8rem;
+        margin:auto;
+        border: .1rem solid rgba(153, 153, 153, 1);
+    }
+    .form-group{
+        position:relative;
+        margin-top: 2.4rem;
+    }
+    input{
+        width: 100%;
+        height: 3rem;
+        padding: .6rem;
+        outline: none;
+    }
+    label{
+        position:absolute;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+        background-color: #fff;
+        color: rgba(153, 153, 153, 1);
+        padding: 0 .4rem;
+        user-select: none;
+        transition: all .26s linear;
+    }
+    input:focus ~ label,
+    input:not(:placeholder-shown) ~ label{
+        top: 0;
+        left: 0.2rem;
+        color:blueviolet;
+    }
+</style>
+<body>
+    <main>
+        <div class="container">
+            <form action="">
+                <h1>Sign In</h1>
+                <div class="form-group">
+                    <input type="text" placeholder=" ">
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder=" ">
+                    <label for="name">Email</label>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
